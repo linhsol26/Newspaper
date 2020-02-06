@@ -1,0 +1,18 @@
+<ng-container *ngIf="dataservice.db != null">
+  <mat-accordion  *ngFor="let contents of dataservice.db.articles">
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{contents.title}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <h3>
+        {{contents.description}}
+        <button mat-button style="display: flex; float: right;" (click)="getDetails(contents.source.name)"><mat-icon>navigate_next</mat-icon></button>
+      </h3>
+    </mat-expansion-panel>
+  </mat-accordion>
+</ng-container>
+
+

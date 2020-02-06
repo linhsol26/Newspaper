@@ -1,0 +1,20 @@
+<div style="justify-content: center; margin-left: 18%;">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title style="font-size: 30px;">{{details.title}}</mat-card-title>
+      <mat-card-subtitle>{{details.author}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{details.urlToImage}}" alt="" style="width: 70%; height: 70%; margin-left: 15%;">
+    <mat-card-content>
+      <p style="font-size: 20px;">
+        {{details.content}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
